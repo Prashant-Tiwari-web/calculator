@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 Personal Project
 Calculate Sip
 Calculate Emi
