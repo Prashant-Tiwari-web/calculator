@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Prashant Tiwari</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="background" id="top">
+	<header>
+		<nav class="main">
+			<ul class="scroll">
+				<li><a href="#standard">CALCULATOR</a></li>
+				<li><a href="#sip" >SIP calculator</a></li>
+				<li><a href="#emi">EMI calculator</a></li>
+				<li><a href="#fd">FD calculator</a></li>
+				<li><a onclick="alert('Under Construction :-)')">Contact</a></li>
+				<!-- <li><a onclick="myfunction2()">Blog</a></li> -->
+				<li><a onclick="myfunction2()">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+
+		
+		<center>
+			
+			<div id="sip" class="tabcontent" >
+				<h2>Systamatic Investment Plan</h2>
+				
+				<form>
+					<h4>Monthly Investment (Rs.)</h4>
+					<br>
+					<input type="text"  id="amount" name="" value="" placeholder="eg. 100rs or 500rs or 1000rs">
+					<br>
+	  				<h4>No. of Months</h4><br> <input type="text" id="months" name="" value="" placeholder="eg.24 months ">
+	  				
+	  				<br>
+	  				<h4>Annual Return (%)</h4> <br> <input type="text" id="interest" name="" value="" placeholder="Expected Annual Return">
+	  				
+	  				<br>
+	  				<br>
+					<input type="button" onclick="futurevalue()" value="Calculate" id="calculate">&nbsp 
+					<input type="reset" name="" value="reset" onclick="clear()" id="resetbtn" >
+					<br><br>
+					<span id="invested"> </span>
+					<span id="return"> </span>
+					<span id="fvalue"> </span> 
+					<br>
+					
+				</form>
+			</div>
+			
+		  
+			
+			<div id="emi" class="tabcontent">
+				<h2>Equated Monthly Installment</h2>
+				
+				<form>
+				<h4>Loan Amount</h4>
+				<input type="text" name="loan=amount" id="loan-amount" placeholder="Enter Loan Amount">
+				<br>
+				<h4>Tenure</h4>
+				<input type="text" name="tenure" id="tenure" placeholder="Enter Year">
+				<br>
+				<h4>Interest Rate</h4>
+				<input type="text" name="interest" id="interest-rate" placeholder="Enter Rate of Interest">
+				<br>
+				<br>
+				<input type="button" onclick="emi()" value="Calculate" id="calculate">&nbsp
+				<input type="reset" name="" value="reset" onclick="clear()" id="resetbtn" >
+				<br>
+				<br>
+				<span id="monthly-emi"> </span>
+				<span id="payable-emi"> </span>
+			</form>
+			</div>
+			
+			<div id="fd">
+				<h2>Fixed Deposit</h2>
+				
+				<form>
+				<h4>Deposited Amount</h4>
+				<input type="text" name="" id="deposit" placeholder="Enter Deposited Amount">
+				<br>
+				<h4>Fd-interest</h4>
+				<input type="text" id="fd-interest" name="" placeholder="Interest on FD">
+				<br>
+				<h4>Year</h4>
+				<input type="text" name="" id="year" placeholder="Enter Year">
+				<br>
+				<br>
+				<input type="button" onclick="fd()" name="" value="Calculate" id="calculate">&nbsp
+				<input type="reset" name="" value="reset" onclick="clear()" id="resetbtn" >
+				<br><br>
+					<span id="interest-earn"> </span>
+					<span id="total-amount"> </span>
+					<br>
+				</form>
+			</div>
+		
+		<!-- <h2 id="calculator">Calculator</h2> -->
+		  <div class="container" id="standard">
+		  	
+		  	<table border="1" cellspacing="0">
+		  		<tr>
+		  			<td colspan="4" id="inputlabel">0</td>
+		  		</tr>
+		  		<tr>
+		  			<td colspan="3"><button onclick="pushBtn(this);">All Clear</button></td>
+		  			<td><button onclick="pushBtn(this);">/</button></td>
+		  		</tr>
+		  		<tr>
+		  			<td><button onclick="pushBtn(this);">7</button></td>
+		  			<td><button onclick="pushBtn(this);">8</button></td>
+		  			<td><button onclick="pushBtn(this);">9</button></td>
+		  			<td><button onclick="pushBtn(this);">*</button></td>
+		  		</tr>
+		  		<tr>
+		  			<td><button onclick="pushBtn(this);">4</button></td>
+		  			<td><button onclick="pushBtn(this);">5</button></td>
+		  			<td><button onclick="pushBtn(this);">6</button></td>
+		  			<td><button onclick="pushBtn(this);">-</button></td>
+		  		</tr>
+		  		<tr>
+		  			<td><button onclick="pushBtn(this);">1</button></td>
+		  			<td><button onclick="pushBtn(this);">2</button></td>
+		  			<td><button onclick="pushBtn(this);">3</button></td>
+		  			<td><button onclick="pushBtn(this);">+</button></td>
+		  		</tr>
+		  		<tr>
+		  			<td colspan="2"><button onclick="pushBtn(this);">0</button></td>
+		  			<td><button onclick="pushBtn(this);">.</button></td>
+		  			<td><button onclick="pushBtn(this);">=</button></td>
+		  		</tr>
+		  	</table>
+		  </div>
+		</center>
+		
+			<a id="topbtn" href="#top" >&#916</a>
+
+			<div id="footer">
+
+				<i>&copy 2020 Prashant Tiwari
+
+			</div>
+			
+			
+
+</body>
+</html>
